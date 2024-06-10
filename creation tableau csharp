@@ -1,0 +1,20 @@
+int [] tableau1= new int[4] { 2, 4, 6, 8 };
+int [] tableau2= new int[4] { 2, 4, 6, 8 };
+int [] tableau3= new int[8] ;
+
+for(int i = 0; i<8; i++){
+    if(i<4)
+    tableau3[i] = tableau1[i];
+    else
+    tableau3[i] = tableau2[i-4];
+}
+
+Console.Write("[");
+for(int i = 0; i < 8; i++){
+    if(i == 7){
+            Console.Write($"{tableau3[i]}]");
+    }
+    else{
+    Console.Write($"{tableau3[i]},");
+    }
+}
